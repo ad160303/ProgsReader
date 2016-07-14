@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
@@ -25,18 +27,21 @@ import java.io.InputStreamReader;
  */
 public class ReaderActivity extends AppCompatActivity {
     /**
+     * This is added by ide.
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private static final boolean AUTO_HIDE = true;
 
     /**
+     * This is added by ide.
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
      * user interaction before hiding the system UI.
      */
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
 
     /**
+     * This is added by ide.
      * Some older devices needs a small delay between UI widget updates
      * and a change of the status and navigation bar.
      */
@@ -80,6 +85,7 @@ public class ReaderActivity extends AppCompatActivity {
         }
     };
     /**
+     * This is added by ide.
      * Touch listener to use for in-layout UI controls to delay hiding the
      * system UI. This is to prevent the jarring behavior of controls going away
      * while interacting with activity UI.
@@ -193,7 +199,7 @@ public class ReaderActivity extends AppCompatActivity {
                 .append("\n");
             }
         } catch (IOException ioe){
-
+            // handle ex
         }finally {
             if (br != null){
                 try {
